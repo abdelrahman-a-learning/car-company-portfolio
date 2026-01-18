@@ -1,0 +1,15 @@
+# OS Files
+.DS_Store
+
+# Editor / IDE
+.vscode/
+
+# Environment
+.env
+
+# Dependencies
+
+# Logs
+*.log
+
+# Temp
