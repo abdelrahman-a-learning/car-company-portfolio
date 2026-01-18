@@ -24,6 +24,22 @@ body {
   padding: 15px 40px;
 }
 
+/* Logo */
+.logo {
+  line-height: 1;
+}
+
+.logo a {
+  display: block;
+}
+
+.logo img {
+  max-height: 50px;
+  width: auto;
+  display: block;
+}
+
+/* Navigation */
 .nav a {
   color: #fff;
   margin-left: 20px;
