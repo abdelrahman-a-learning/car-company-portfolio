@@ -5,73 +5,280 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AutoDrive | Premium Cars</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Header -->
+  <!-- Header --> 
   <header class="header">
     <div class="container">
       <h1 class="logo">
         <a href="index.html">
-          <img src="assets/images/modern-logo.png" alt="AutoDrive Logo" />
+          <span class="logo-text">AutoDrive</span>
         </a>
       </h1>
       <nav class="nav">
-        <a href="index.html">Home</a>
+        <a href="index.html" class="active">Home</a>
         <a href="about.html">About</a>
         <a href="services.html">Services</a>
         <a href="fleet.html">Fleet</a>
         <a href="contact.html">Contact</a>
       </nav>
+      <button class="mobile-menu-btn">☰</button>
     </div>
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
+    <div class="hero-overlay"></div>
     <div class="hero-content">
-      <h2>Drive with Excellence</h2>
-      <p>Premium cars for business and personal use</p>
-      <a href="fleet.html" class="btn">View Our Fleet</a>
+      <h2 class="hero-title">Drive with Excellence</h2>
+      <p class="hero-subtitle">Premium cars for business and personal use</p>
+      <div class="hero-buttons">
+        <a href="fleet.html" class="btn btn-primary">View Our Fleet</a>
+        <a href="contact.html" class="btn btn-secondary">Get Started</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow">↓</div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats-section">
+    <div class="stats-container">
+      <div class="stat-item">
+        <h3 class="stat-number" data-target="500">0</h3>
+        <p>Premium Vehicles</p>
+      </div>
+      <div class="stat-item">
+        <h3 class="stat-number" data-target="10000">0</h3>
+        <p>Happy Clients</p>
+      </div>
+      <div class="stat-item">
+        <h3 class="stat-number" data-target="25">0</h3>
+        <p>Years Experience</p>
+      </div>
+      <div class="stat-item">
+        <h3 class="stat-number" data-target="50">0</h3>
+        <p>Global Locations</p>
+      </div>
     </div>
   </section>
 
   <!-- Services -->
   <section class="services">
-    <h3>Our Services</h3>
+    <div class="section-header">
+      <span class="section-subtitle">What We Offer</span>
+      <h3 class="section-title">Our Premium Services</h3>
+      <p class="section-description">Experience luxury and convenience with our comprehensive range of services</p>
+    </div>
     <div class="service-cards">
-      <div class="card">Car Rental</div>
-      <div class="card">Corporate Leasing</div>
-      <div class="card">Luxury Chauffeur</div>
+      <div class="card">
+        <div class="card-icon">🚗</div>
+        <h4>Car Rental</h4>
+        <p>Daily, weekly, or monthly rentals with premium insurance coverage</p>
+        <a href="services.html" class="card-link">Learn More →</a>
+      </div>
+      <div class="card">
+        <div class="card-icon">🏢</div>
+        <h4>Corporate Leasing</h4>
+        <p>Flexible leasing solutions for businesses of all sizes</p>
+        <a href="services.html" class="card-link">Learn More →</a>
+      </div>
+      <div class="card">
+        <div class="card-icon">👔</div>
+        <h4>Luxury Chauffeur</h4>
+        <p>Professional chauffeur service for events and executives</p>
+        <a href="services.html" class="card-link">Learn More →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Vehicles -->
+  <section class="featured-vehicles">
+    <div class="section-header">
+      <span class="section-subtitle">Our Collection</span>
+      <h3 class="section-title">Featured Vehicles</h3>
+    </div>
+    <div class="vehicle-grid">
+      <div class="vehicle-card">
+        <div class="vehicle-image">
+          <img src="assets/images/fleet/luxury-sedan.jpg" alt="Luxury Sedan" onerror="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'">
+          <div class="vehicle-badge">Popular</div>
+        </div>
+        <div class="vehicle-info">
+          <h4>Luxury Sedan</h4>
+          <p class="vehicle-desc">Mercedes-Benz S-Class</p>
+          <div class="vehicle-features">
+            <span>⚡ Automatic</span>
+            <span>👥 5 Seats</span>
+            <span>⭐ Premium</span>
+          </div>
+          <div class="vehicle-price">
+            <span class="price">$299/day</span>
+            <a href="fleet.html" class="btn btn-small">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="vehicle-card">
+        <div class="vehicle-image">
+          <img src="assets/images/fleet/suv.jpg" alt="Luxury SUV" onerror="this.style.background='linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'">
+        </div>
+        <div class="vehicle-info">
+          <h4>Luxury SUV</h4>
+          <p class="vehicle-desc">Range Rover Sport</p>
+          <div class="vehicle-features">
+            <span>⚡ Automatic</span>
+            <span>👥 7 Seats</span>
+            <span>🏔️ 4WD</span>
+          </div>
+          <div class="vehicle-price">
+            <span class="price">$349/day</span>
+            <a href="fleet.html" class="btn btn-small">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="vehicle-card">
+        <div class="vehicle-image">
+          <img src="assets/images/fleet/sports.jpg" alt="Sports Car" onerror="this.style.background='linear-gradient(135deg, #fa709a 0%, #fee140 100%)'">
+          <div class="vehicle-badge">New</div>
+        </div>
+        <div class="vehicle-info">
+          <h4>Sports Car</h4>
+          <p class="vehicle-desc">Porsche 911</p>
+          <div class="vehicle-features">
+            <span>⚡ Manual</span>
+            <span>👥 2 Seats</span>
+            <span>🏎️ Sports</span>
+          </div>
+          <div class="vehicle-price">
+            <span class="price">$499/day</span>
+            <a href="fleet.html" class="btn btn-small">Book Now</a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Testimonials -->
   <section class="testimonials">
-    <h3>What Our Clients Say</h3>
+    <div class="section-header">
+      <span class="section-subtitle">Client Reviews</span>
+      <h3 class="section-title">What Our Clients Say</h3>
+    </div>
     <div class="testimonial-slider">
       <div class="testimonial active">
-        <p>"Exceptional service and premium vehicles. AutoDrive made our corporate event unforgettable!"</p>
-        <span class="author">- Sarah Johnson, CEO</span>
+        <div class="testimonial-content">
+          <div class="quote-icon">"</div>
+          <p>"Exceptional service and premium vehicles. AutoDrive made our corporate event unforgettable!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SJ</div>
+            <div class="author-info">
+              <span class="author-name">Sarah Johnson</span>
+              <span class="author-role">CEO, Tech Corp</span>
+            </div>
+          </div>
+          <div class="rating">★★★★★</div>
+        </div>
       </div>
       <div class="testimonial">
-        <p>"The best car rental experience I've ever had. Professional, reliable, and luxurious."</p>
-        <span class="author">- Michael Chen, Business Executive</span>
+        <div class="testimonial-content">
+          <div class="quote-icon">"</div>
+          <p>"The best car rental experience I've ever had. Professional, reliable, and luxurious."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">MC</div>
+            <div class="author-info">
+              <span class="author-name">Michael Chen</span>
+              <span class="author-role">Business Executive</span>
+            </div>
+          </div>
+          <div class="rating">★★★★★</div>
+        </div>
       </div>
       <div class="testimonial">
-        <p>"Outstanding chauffeur service. Always on time and incredibly professional."</p>
-        <span class="author">- Emma Williams, Event Planner</span>
+        <div class="testimonial-content">
+          <div class="quote-icon">"</div>
+          <p>"Outstanding chauffeur service. Always on time and incredibly professional."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">EW</div>
+            <div class="author-info">
+              <span class="author-name">Emma Williams</span>
+              <span class="author-role">Event Planner</span>
+            </div>
+          </div>
+          <div class="rating">★★★★★</div>
+        </div>
       </div>
     </div>
     <div class="slider-controls">
-      <button class="slider-btn prev">‹</button>
-      <button class="slider-btn next">›</button>
+      <button class="slider-btn prev" aria-label="Previous testimonial">‹</button>
+      <div class="slider-dots"></div>
+      <button class="slider-btn next" aria-label="Next testimonial">›</button>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="cta-content">
+      <h3>Ready to Experience Luxury?</h3>
+      <p>Book your premium vehicle today and enjoy the finest driving experience</p>
+      <div class="cta-buttons">
+        <a href="contact.html" class="btn btn-light">Contact Us</a>
+        <a href="tel:+1234567890" class="btn btn-outline">📞 Call Now</a>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <p>© 2026 AutoDrive. All rights reserved.</p>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>AutoDrive</h4>
+        <p>Your trusted partner for premium car rentals and luxury chauffeur services.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook">📘</a>
+          <a href="#" aria-label="Twitter">🐦</a>
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="LinkedIn">💼</a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="fleet.html">Our Fleet</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Car Rental</a></li>
+          <li><a href="#">Corporate Leasing</a></li>
+          <li><a href="#">Chauffeur Service</a></li>
+          <li><a href="#">Airport Transfer</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact Info</h4>
+        <ul class="contact-info">
+          <li>📍 123 Luxury Ave, City</li>
+          <li>📞 +1 (234) 567-8900</li>
+          <li>✉️ info@autodrive.com</li>
+          <li>🕐 24/7 Service</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 AutoDrive. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
   </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
 
   <script src="js/main.js"></script>
 </body>
