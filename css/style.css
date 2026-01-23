@@ -11,11 +11,13 @@
   --secondary-color: #f59e0b;
   --text-dark: #1f2937;
   --text-light: #6b7280;
-  --bg-light: #f9fafb;
+  --bg-light: #f5f3ff;
+  --bg-accent: #ede9fe;
   --white: #ffffff;
   --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
   --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  --gradient-soft: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
   --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.15);
@@ -434,7 +436,7 @@ body {
 /* ===== FEATURED VEHICLES ===== */
 .featured-vehicles {
   padding: 100px 40px;
-  background: var(--bg-light);
+  background: var(--gradient-soft);
 }
 
 .vehicle-grid {
