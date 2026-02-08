@@ -11,10 +11,12 @@ A business portfolio website built as a course example.
 
 ## Tech Stack
 - HTML5
-- CSS3
+- CSS3 (Custom animations)
 - Vanilla JavaScript
+- Responsive Design
 
 ## Purpose
 - Teach project structure
 - Practice responsive layout
 - Simulate real client portfolio
+- Learn Git workflows
