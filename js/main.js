@@ -58,10 +58,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const updateCounter = () => {
       current += increment;
       if (current < target) {
-        element.textContent = Math.floor(current);
+        element.textContent = Math.floor(current).toLocaleString();
         requestAnimationFrame(updateCounter);
       } else {
-        element.textContent = target + (target >= 1000 ? '+' : '');
+        element.textContent = target.toLocaleString() + (target >= 1000 ? '+' : '');
       }
     };
 
