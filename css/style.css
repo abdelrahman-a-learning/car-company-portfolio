@@ -32,13 +32,25 @@ body {
   overflow-x: hidden;
 }
 
-/* Promo Banner - Work in progress */
+/* Promo Banner */
 .promo-banner {
   background: var(--gradient-2);
   color: var(--white);
   text-align: center;
   padding: 12px 20px;
   font-weight: 600;
+  animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .container {
