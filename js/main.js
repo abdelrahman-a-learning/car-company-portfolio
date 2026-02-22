@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ===== MOBILE MENU =====
   const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-  const nav = document.querySelector('.nav');
+  const nav = document.querySelector('.navbar');
 
   if (mobileMenuBtn) {
     mobileMenuBtn.addEventListener('click', () => {
