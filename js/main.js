@@ -3,9 +3,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ===== MOBILE MENU =====
   const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-  const nav = document.querySelector('.navbar');
+  const nav = document.querySelector('.nav');
 
-  if (mobileMenuBtn) {
+  if (mobileMenuBtn && nav) {
     mobileMenuBtn.addEventListener('click', () => {
       nav.classList.toggle('active');
     });
