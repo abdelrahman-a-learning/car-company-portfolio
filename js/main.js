@@ -10,6 +10,13 @@ document.addEventListener("DOMContentLoaded", () => {
       nav.classList.toggle('active');
     });
 
+    // Improve mobile UX by collapsing the menu after link selection.
+    nav.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('active');
+      });
+    });
+
     // Close menu when clicking outside
     document.addEventListener('click', (e) => {
       if (!e.target.closest('.header')) {
