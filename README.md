@@ -20,3 +20,4 @@ A business portfolio website built as a course example.
 - Practice responsive layout
 - Simulate real client portfolio
 - Learn Git workflows
+Test SSH!
