@@ -1,6 +1,6 @@
-# AutoDrive – Car Company Portfolio
+# Project Overview
 
-A business portfolio website built as a course example.
+This project is a responsive portfolio website for a car company.
 
 ## Pages
 - Home
