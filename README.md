@@ -9,6 +9,12 @@ This project is a responsive portfolio website for a car company.
 - Fleet
 - Contact
 
+## Features
+- Responsive layout across desktop, tablet, and mobile
+- Animated sections and interactive navigation
+- Fleet showcase for displaying available vehicles
+- Contact section for customer inquiries
+
 ## Tech Stack
 - HTML5
 - CSS3 (Custom animations)
@@ -18,5 +24,5 @@ This project is a responsive portfolio website for a car company.
 ## Purpose
 - Teach project structure
 - Practice responsive layout
-- Simulate real client portfolio
+- Simulate a real client portfolio
 - Learn Git workflows
