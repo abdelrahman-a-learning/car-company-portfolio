@@ -13,7 +13,7 @@ This project is a responsive portfolio website for a car company.
 - Responsive layout across desktop, tablet, and mobile
 - Animated sections and interactive navigation
 - Fleet showcase for displaying available vehicles
-- Contact section for customer inquiries
+- Contact section for customer inquiries and engagement
 
 ## Tech Stack
 - HTML5
