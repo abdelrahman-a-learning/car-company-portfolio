@@ -1158,6 +1158,11 @@ body {
   box-shadow: var(--shadow-xl);
 }
 
+.back-to-top:focus-visible {
+  outline: 3px solid var(--secondary-color);
+  outline-offset: 4px;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .mobile-menu-btn {
