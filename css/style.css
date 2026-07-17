@@ -273,6 +273,7 @@ body.dark-mode .header {
   position: relative;
   z-index: 10;
   max-width: 800px;
+  margin-bottom: 70px;
   padding: 40px;
   animation: fadeInUp 1s ease-out;
 }
@@ -299,10 +300,21 @@ body.dark-mode .header {
 
 .hero-subtitle {
   font-size: 1.5rem;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
   font-weight: 300;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
   animation: fadeInUp 1s ease-out 0.4s both;
+}
+
+.hero-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.hero-main-cta {
+  min-width: 280px;
 }
 
 .hero-buttons {
@@ -314,9 +326,9 @@ body.dark-mode .header {
 }
 
 .hero-trust-badges {
-  margin-top: 20px;
+  margin-top: 32px;
   display: flex;
-  gap: 10px;
+  gap: 14px;
   justify-content: center;
   flex-wrap: wrap;
   animation: fadeInUp 1s ease-out 0.8s both;
@@ -398,12 +410,13 @@ body.dark-mode .header {
 /* ===== SCROLL INDICATOR ===== */
 .scroll-indicator {
   position: absolute;
-  bottom: 30px;
+  bottom: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
   color: var(--white);
+  z-index: 10;
   animation: fadeIn 2s ease-out 1s both;
 }
 
@@ -1297,9 +1310,17 @@ body.dark-mode .map-placeholder {
 }
 
 @media (max-width: 480px) {
+  .hero-content {
+    padding: 30px 20px 90px;
+  }
+
   .hero-buttons {
     flex-direction: column;
     width: 100%;
+  }
+
+  .hero-main-cta {
+    min-width: 0;
   }
 
   .btn {
