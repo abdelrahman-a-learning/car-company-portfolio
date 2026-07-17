@@ -38,8 +38,8 @@ body.dark-mode {
   --text-light: #d1d5db;
   --bg-light: #111827;
   --bg-accent: #1f2937;
-  --white: #111827;
   --gradient-soft: linear-gradient(135deg, #111827 0%, #1f2937 100%);
+  background: #0f172a;
 }
 
 /* Promo Banner */
@@ -504,6 +504,11 @@ body.dark-mode .header {
   background: var(--white);
 }
 
+body.dark-mode .services,
+body.dark-mode .testimonials {
+  background: #0f172a;
+}
+
 .service-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -528,6 +533,7 @@ body.dark-mode .vehicle-card,
 body.dark-mode .info-card,
 body.dark-mode .contact-form-section,
 body.dark-mode .testimonial-content {
+  background: #1f2937;
   border-color: #374151;
 }
 
@@ -1008,6 +1014,7 @@ body.dark-mode .vehicle-price {
 body.dark-mode .form-group input,
 body.dark-mode .form-group textarea,
 body.dark-mode .form-group select {
+  background: #111827;
   border-color: #374151;
 }
 
