@@ -1,6 +1,31 @@
 document.addEventListener("DOMContentLoaded", () => {
   console.log("AutoDrive website loaded");
 
+  // ===== THEME TOGGLE =====
+  const themeToggle = document.querySelector('.theme-toggle');
+  const savedTheme = localStorage.getItem('theme');
+
+  function setTheme(theme) {
+    const isDarkMode = theme === 'dark';
+
+    document.body.classList.toggle('dark-mode', isDarkMode);
+
+    if (themeToggle) {
+      themeToggle.textContent = isDarkMode ? '☀️' : '🌙';
+      themeToggle.setAttribute('aria-label', isDarkMode ? 'Switch to light mode' : 'Switch to dark mode');
+    }
+  }
+
+  setTheme(savedTheme === 'dark' ? 'dark' : 'light');
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const nextTheme = document.body.classList.contains('dark-mode') ? 'light' : 'dark';
+      localStorage.setItem('theme', nextTheme);
+      setTheme(nextTheme);
+    });
+  }
+
   // ===== MOBILE MENU =====
   const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
   const nav = document.querySelector('.nav');
