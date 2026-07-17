@@ -25,6 +25,27 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // ===== PROMO CODE COPY =====
+  const promoCopyBtn = document.querySelector('.promo-copy-btn');
+
+  if (promoCopyBtn) {
+    const defaultText = promoCopyBtn.textContent;
+    const promoCode = promoCopyBtn.dataset.promoCode;
+
+    promoCopyBtn.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(promoCode);
+        promoCopyBtn.textContent = 'Copied!';
+      } catch (error) {
+        promoCopyBtn.textContent = 'Copy failed';
+      }
+
+      setTimeout(() => {
+        promoCopyBtn.textContent = defaultText;
+      }, 2000);
+    });
+  }
+
   // ===== HEADER SCROLL EFFECT =====
   const header = document.querySelector('.header');
   let lastScroll = 0;
@@ -354,4 +375,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
   console.log("All interactive features initialized ✓");
 });
-

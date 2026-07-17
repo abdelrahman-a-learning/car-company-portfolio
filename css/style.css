@@ -39,7 +39,31 @@ body {
   text-align: center;
   padding: 12px 20px;
   font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
   animation: slideDown 0.5s ease-out;
+}
+
+.promo-copy-btn {
+  background: var(--white);
+  color: var(--primary-dark);
+  border: none;
+  border-radius: 20px;
+  padding: 6px 14px;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.promo-copy-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
 }
 
 @keyframes slideDown {
